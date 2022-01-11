@@ -1,0 +1,3 @@
+# codegenrator
+基于mybatisplus自定义Freemaker模板的代码生成器
+生成基本的增删改查接口
