@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: beta
+  freemarker:
+    template-loader-path: /templates
+server:
+  port: 8088
+
+#com:
+#  cmsiw:
+#    codegenrator:
+#      author: tangs
+#      datasource:
+#        driverName: org.postgresql.Driver
+#        url: jdbc:postgresql://192.168.0.100:9432/czkj?currentSchema=dev
+#        username: postgres
+#        password: postgres
