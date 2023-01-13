@@ -18,6 +18,7 @@
     </parent>
 
     <properties>
+        <clzy.web.version>1.0.0</clzy.web.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -28,7 +29,52 @@
         <mssql-jdbc.version>7.4.1.jre8</mssql-jdbc.version>
     </properties>
 
-
+    <repositories>
+        <repository>
+            <id>es-snapshots</id>
+            <name>elasticsearch snapshot repo</name>
+            <url>https://snapshots.elastic.co/maven/</url>
+        </repository>
+        <repository>
+            <id>inteso-public</id>
+            <name>Inteso Public</name>
+            <url>https://oss.clzytech.com:1024/repository/inteso-public/</url>
+            <snapshots>
+                <updatePolicy>always</updatePolicy>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>always</updatePolicy>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>aliyun-repos</id>
+            <name>Aliyun Releases</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+    </repositories>
+    <!-- 设定插件仓库 -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>aliyun-repos</id>
+            <name>Aliyun Releases</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>inteso-public</id>
+            <name>Inteso Public</name>
+            <url>https://oss.clzytech.com:1024/repository/inteso-public/</url>
+            <snapshots>
+                <updatePolicy>always</updatePolicy>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>always</updatePolicy>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
     <!--<repositories>
         <repository>
             <id>inteso</id>
@@ -76,6 +122,41 @@
             <artifactId>site-core</artifactId>
             <version>${site-core.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.freewayso</groupId>
+            <artifactId>image-combiner</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+<!--        <dependency>
+            <groupId>com.clzy</groupId>
+            <artifactId>clzy-web</artifactId>
+            <version>1.0.0</version>
+        </dependency>-->
+
+
+<!--        <dependency>
+            <groupId>com.clzy</groupId>
+            <artifactId>clzy-web-starter-crud</artifactId>
+            <version>${clzy.web.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.clzy</groupId>
+            <artifactId>clzy-web-core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.clzy</groupId>
+            <artifactId>clzy-web-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>-->
+
+
+        <!--        <dependency>
+                    <groupId>com.clzy</groupId>
+                    <artifactId>clzy-web-starter-crud</artifactId>
+                    <version>1.0.0</version>
+                </dependency>-->
 
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>

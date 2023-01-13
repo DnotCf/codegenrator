@@ -26,9 +26,9 @@ import java.util.*;
 public class MybatisGenerator implements Runnable {
 
 
-    public String url = "jdbc:mysql://192.168.50.105:12001/geo-xf-test?characterEncoding=UTF-8&serverTimezone=GMT%2b8&allowMultiQueries=true&useSSL=false";
-    public String username = "xj-test";
-    public String password = "";
+    public String url = "jdbc:mysql://192.168.50.105:12001/gzjc-db?characterEncoding=UTF-8&serverTimezone=GMT%2b8&allowMultiQueries=true&useSSL=false";
+    public String username = "gzjc";
+    public String password = "123456ABc";
     public String driverName = "com.mysql.jdbc.Driver";
 //    public String url = "jdbc:sqlserver://server.clzytech.com:8433;DatabaseName=geo_sc";
 //    public String username = "geo_sc";
